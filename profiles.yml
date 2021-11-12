@@ -1,0 +1,10 @@
+dbt_hello_world:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: spheric-crowbar-303120
+      dataset: frog
+      threads: 10
+      keyfile: '/home/dbt_hello_world/spheric-crowbar-303120-c434be9ced46.json'
